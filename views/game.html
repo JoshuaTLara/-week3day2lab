@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Form</title>
+</head>
+<body>
+
+    <h1>Play the game </h1>
+
+    <form action="/madlib" method="post">
+
+        <label for="person">Name of a Person:</label>
+        <input type="text" id="person" name="person" required><br><br>
+
+        <label for="color">Favorite Color:</label>
+        <input type="text" id="color" name="color" required><br><br>
+
+        <label for="noun">Favorite Noun:</label>
+        <input type="text" id="noun" name="noun" required><br><br>
+
+        <label for="adjective">Favorite Adjective:</label>
+        <select id="adjective" name="adjective" required>
+            <option value="happy">Happy</option>
+            <option value="exciting">Exciting</option>
+            <option value="funny">Funny</option>
+            <option value="creative">Creative</option>
+        </select><br><br>
+
+        <input type="submit" value="Generate Story">
+
+    </form>
+
+</body>
+</html>
